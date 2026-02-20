@@ -1,67 +1,120 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Il Mio Sito Personale</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-        }
-        section {
-            padding: 40px;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            width: 60%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            background: #007bff;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Il Mio Sito Personale</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* NAVIGAZIONE */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <h1>Nome Cognome</h1>
     <p>Perito Elettronico | PLC | Automazione</p>
+
+    <nav>
+        <a href="#home"><button class="nav-button">Home</button></a>
+        <a href="#chi-sono"><button class="nav-button">Chi Sono</button></a>
+        <a href="#competenze"><button class="nav-button">Competenze</button></a>
+        <a href="#progetti"><button class="nav-button">Progetti</button></a>
+        <a href="#servizi"><button class="nav-button">Servizi</button></a>
+        <a href="#contatti"><button class="nav-button">Contatti</button></a>
+    </nav>
 </header>
 
-<section>
+<section id="home">
+    <div class="box">
+        <h2>Home</h2>
+        <p>Benvenuto nel mio sito professionale.</p>
+    </div>
+</section>
+
+<section id="chi-sono">
     <div class="box">
         <h2>Chi Sono</h2>
         <p>Sono un tecnico specializzato in elettronica e automazione industriale.</p>
     </div>
+</section>
 
+<section id="competenze">
     <div class="box">
         <h2>Competenze</h2>
-        <p>PLC Siemens, TIA Portal, Quadri elettrici, Programmazione Ladder</p>
+        <p>PLC Siemens, TIA Portal, Quadri elettrici, Programmazione Ladder.</p>
     </div>
+</section>
 
+<section id="progetti">
+    <div class="box">
+        <h2>Progetti</h2>
+        <p>Qui inserirai i tuoi progetti PLC e automazione.</p>
+    </div>
+</section>
+
+<section id="servizi">
+    <div class="box">
+        <h2>Servizi</h2>
+        <p>Consulenza, progettazione impianti, sviluppo software PLC.</p>
+    </div>
+</section>
+
+<section id="contatti">
     <div class="box">
         <h2>Contatti</h2>
         <p>Email: tuaemail@email.com</p>
-        <button>Contattami</button>
     </div>
 </section>
 
